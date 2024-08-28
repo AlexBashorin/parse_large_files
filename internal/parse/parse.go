@@ -65,7 +65,7 @@ func CountUniqueIPs(filename string) (uint32, error) {
 	fmt.Println(counter.uniq_ip)
 	if len(counter.uniq_ip) > 0 {
 		for i := 0; i < len(counter.uniq_ip); i++ {
-			unic_ips, err := os.OpenFile("./unic.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+			unic_ips, err := os.OpenFile("./unique.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 
 			if err != nil {
 				return 0, err
